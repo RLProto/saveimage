@@ -9,8 +9,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     libssl-dev \
     gcc \
-    libopencv-dev \
-    python3-opencv \
     curl \
     libxml2-dev \
     && rm -rf /var/lib/apt/lists/*
