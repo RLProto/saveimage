@@ -1,5 +1,5 @@
 # Use an ARM64 compatible Python base image
-FROM arm64v8/python:3.11.4-slim
+FROM python:3.10.12-slim-buster
 
 # Set the working directory in the container
 WORKDIR /app
