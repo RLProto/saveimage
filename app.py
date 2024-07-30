@@ -203,7 +203,7 @@ def connect_to_opcua():
                 logging.exception("Error during disconnection: " + str(e))
 
 async def websocket_server():
-    async with websockets.serve(websocket_handler, "localhost", 8000):
+    async with websockets.serve(websocket_handler, "0.0.0.0", 8000):
         await asyncio.Future()  # This will run forever
 
 def main():
@@ -216,3 +216,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
